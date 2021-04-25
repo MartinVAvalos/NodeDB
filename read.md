@@ -5,3 +5,5 @@ This project will cover
 
 Author: Martin Vera
 04/24/21
+
+<!-- sequelize.close() -->
