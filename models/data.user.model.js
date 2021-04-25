@@ -1,10 +1,10 @@
 let dbORM = require('../util/sequelize.js')
 const { DataTypes } = require("sequelize");
-const { set } = require('../util/sequelize.js');
+// const { set } = require('../util/sequelize.js');
 
 
 function setup() {
-  const User = dbORM.define('User', {
+  const User = dbORM.define('Users', {
     // Model attributes are defined here
     firstName: {
       type: DataTypes.STRING(20),
@@ -19,12 +19,12 @@ function setup() {
     }
   });
 
-  User.sync({ force: true})
+  // User.sync({ force: true})
 
   return User;
 }
 
-module.exports = setup;
+module.exports = setup();
 
 
 // (async () => {
