@@ -1,8 +1,9 @@
 class Client {
 
-    constructor(firstName, lastName, balance) {
+    constructor(firstName, lastName, email, balance) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.email = email;
         this.balance = balance;
     }
     

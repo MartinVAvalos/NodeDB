@@ -14,6 +14,11 @@ function setup() {
       type: DataTypes.STRING(20),
       // allowNull defaults to true
     },
+    email: {
+      type: DataTypes.STRING(30),
+      allowNull: false,
+      unique: true
+    },
     balance: {
         type: DataTypes.FLOAT
     }
@@ -25,7 +30,7 @@ function setup() {
 }
 
 module.exports = setup();
-
+// setup();
 
 // (async () => {
 //   await sequelize.sync({ force: true });

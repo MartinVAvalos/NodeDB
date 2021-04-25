@@ -15,6 +15,6 @@ async function testConnect() {
     }
 }
 
-testConnect()
+// testConnect()
 
 module.exports = sequelize;
